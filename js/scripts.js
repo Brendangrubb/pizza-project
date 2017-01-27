@@ -44,7 +44,7 @@ $(document).ready(function() {
     $("#customer-contact-page").fadeIn(1500);
   });
 // BUTTON to enter customer contact and reach final confirmation page
-  $("#enter-delivery-information-button").click(function() {
+  $("#go-to-confirmation-page").click(function() {
     $("#customer-contact-page").hide();
     $("#final-confirmation-page").fadeIn(1500);
   });

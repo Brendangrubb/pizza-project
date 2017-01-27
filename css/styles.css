@@ -1,4 +1,10 @@
+body {
+  background-color: #D49B17;
+}
 
+.btn {
+  background-color: #AFD417;
+}
 
 #custom-choose-topping-page {
   display: none;
@@ -6,10 +12,6 @@
 
 #custom-order-review-page {
   display: none
-}
-
-#custom-pizza-button {
-
 }
 
 #custom-size-page {
@@ -31,12 +33,8 @@
 
 .header {
   text-align: center;
-  background-color: gray;
-}
-
-#premade-pizza-button {
-
-
+  background-color: #17AFD4;
+  padding-top: 20px;
 }
 
 .center-buttons {
@@ -47,6 +45,6 @@
   text-align: center;
 }
 
-#welcome-page {
-
+.well {
+  background-color: #17D49B;
 }
