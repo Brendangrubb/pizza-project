@@ -2,6 +2,32 @@
 var works = console.log("This Part Works!");
 var worksToo = console.log("This Part Works, Too!!");
 
+// CONSTRUCTORS
+function Order(size, toppings, cost, customer) {
+  this.size = size;
+  this.toppings = [];
+  this.cost = cost;
+  this.customer = customer;
+};
+
+function Topping(name, type, upcharge) {
+  this.name = name;
+  this.type = type;
+  this.upcharge = upcharge;
+};
+
+function Customer(name, number, address) {
+  this.name = name;
+  this.number = number;
+  this.address = [];
+};
+
+function Address(street, city, state) {
+  this.street = street;
+  this.city = city;
+  this.state = state;
+};
+
 
 
 
