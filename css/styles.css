@@ -2,11 +2,15 @@ body {
   background-color: #D49B17;
 }
 
+span {
+  background-color: yellow;
+}
 .btn {
   background-color: #AFD417;
 }
 
 #custom-choose-topping-page {
+  text-align: center;
   display: none;
 }
 

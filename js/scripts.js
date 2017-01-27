@@ -37,8 +37,10 @@ function Address(street, city, state) {
 $(document).ready(function() {
   // event.preventDefault();
 
-var newOrder;
-var newCustomer;
+    var newOrder = new Order();
+    var newCustomer;
+    var customerToppings = [];
+
 
 // BUTTONS
 // button to choose custom or premade and enter choose size
@@ -48,7 +50,6 @@ var newCustomer;
   });
 // buttonS to choose size and enter select toppings
   $("#small-custom-button").click(function() {
-    var newOrder = new Order();
     newOrder.size = ("small");
     $("#order-review-size").text(newOrder.size);
     $("#final-confirmation-size").text(newOrder.size);
@@ -58,7 +59,6 @@ var newCustomer;
 
   });
   $("#medium-custom-button").click(function() {
-    var newOrder = new Order();
     newOrder.size = ("medium");
     $("#order-review-size").text(newOrder.size);
     $("#final-confirmation-size").text(newOrder.size);
@@ -68,24 +68,26 @@ var newCustomer;
 
   });
   $("#large-custom-button").click(function() {
-    var newOrder = new Order();
     newOrder.size = ("large");
     $("#order-review-size").text(newOrder.size);
     $("#final-confirmation-size").text(newOrder.size);
     $("#custom-size-page").hide();
     $("#custom-choose-topping-page").fadeIn(1500);
-    console.log(newOrder);
-
   });
 // button to select toppings and enter review order
-  $("#choose-toppings-custom-button").click(function() {
-
+  $("#topping-form").submit(function() {
+    event.preventDefault();
+    $("input:checkbox[name=pizza-toppings]:checked").each(function() {
+      var chosenToppings = $(this).val();
+      newOrder.toppings.push(chosenToppings);
+    });
+    $("#order-review-toppings").text(newOrder.toppings);
+    $("#final-confirmation-toppings").text(newOrder.toppings);
     $("#custom-choose-topping-page").hide();
     $("#custom-order-review-page").fadeIn(1500);
   });
 // button to review order and enter customer contact
   $("#enter-delivery-information-button").click(function() {
-
     $("#custom-order-review-page").hide();
     $("#customer-contact-page").fadeIn(1500);
   });

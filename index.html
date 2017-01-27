@@ -34,40 +34,41 @@
 
       <div class="well" id="custom-choose-topping-page">
         <div class="row">
+          <h3>Choose as many toppings as you'd like! They're $1 each.</h3>
           <form id="topping-form">
           <div class="col-md-4">
             <div class="form-group veg-toppings">
-              <p>Vegetable Toppings</p>
-              <input type="checkbox" name="pizza-practice" value="sauted kale">Sauted Kale<br>
-              <input type="checkbox" name="pizza-practice" value="black-olives">Black Olives<br>
-              <input type="checkbox" name="pizza-practice" value="mushrooms">Grilled Mushrooms<br>
+              <h4>Vegetable Toppings</h4>
+              <input type="checkbox" name="pizza-toppings" value="sauted kale">Sauted Kale<br>
+              <input type="checkbox" name="pizza-toppings" value="black olives">Black Olives<br>
+              <input type="checkbox" name="pizza-toppings" value="mushrooms">Grilled Mushrooms<br>
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group fake-meat-toppings">
-              <p>Fake Meat Toppings</p>
-              <input type="checkbox" name="pizza-practice" value="sauted-seitan">Sauted Seitan<br>
-              <input type="checkbox" name="pizza-practice" value="roasted-tofu">Roasted Tofu<br>
-              <input type="checkbox" name="pizza-practice" value="bbq-tempeh">BBQ Tempeh<br>
+              <h4>Fake Meat Toppings</h4>
+              <input type="checkbox" name="pizza-toppings" value="sauted seitan">Sauted Seitan<br>
+              <input type="checkbox" name="pizza-toppings" value="roasted tofu">Roasted Tofu<br>
+              <input type="checkbox" name="pizza-toppings" value="bbq tempeh">BBQ Tempeh<br>
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group fake-cheese-toppings">
-              <p>Fake Cheese Options</p>
-              <input type="checkbox" name="pizza-practice" value="daya-cheese">Daya Cheese<br>
-              <input type="checkbox" name="pizza-practice" value="oat-cheese">Oat Cheese<br>
-              <input type="checkbox" name="pizza-practice" value="no-cheese">No Cheese<br>
+              <h4>Fake Cheese Options</h4>
+              <input type="checkbox" name="pizza-toppings" value="Daiya cheese">Daya Cheese<br>
+              <input type="checkbox" name="pizza-toppings" value="house made oat cheese">Oat Cheese<br>
+              <input type="checkbox" name="pizza-toppings" value="no cheese">No Cheese<br>
             </div>
           </div>
 
-            <button class="btn" id="choose-toppings-custom-button" type="button">Select Toppings!</button>
+            <button class="btn" id="choose-toppings-custom-button" type="submit">Select Toppings!</button>
           </form>
         </div>
       </div>
 
       <div class="well" id="custom-order-review-page">
         <h3>Your Order:</h3>
-        <p>You have ordered a <span id="order-review-size">L, M, S</span> pizza with the following toppings:<span> TOPPINGS </span>. Your total is $<span>MONEY</span>!</p>
+        <p>You have ordered a <span id="order-review-size"></span> pizza with the following toppings:<span id="order-review-toppings"> TOPPINGS </span>. Your total is $<span id="order-review-cost">MONEY</span>!</p>
         <div class="center-buttons">
           <button id="enter-delivery-information-button" class="btn" type="button">Click Here to Enter Delivery Information</button>
         </div>
