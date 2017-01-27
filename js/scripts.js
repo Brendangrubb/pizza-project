@@ -4,7 +4,6 @@ var worksToo = console.log("This Part Works, Too!!");
 
 
 
-works;
 
 
 
@@ -14,8 +13,10 @@ works;
 // UI Logic
 $(document).ready(function() {
 
-
-  worksToo;
+  $("#custom-pizza-button").click(function() {
+    $("#welcome-page").hide();
+    $("#custom-size-page").fadeIn(1500);
+  })
 
 
 

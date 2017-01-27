@@ -1,3 +1,30 @@
-.jumbotron {
-  background-color: red;
+
+
+
+
+#custom-pizza-button {
+
+}
+
+#custom-size-page{
+    text-align: center;
+    display: none;
+}
+
+.header {
+  text-align: center;
+  background-color: gray;
+}
+
+#premade-pizza-button {
+
+
+}
+
+.premade-or-custom-buttons {
+  text-align: center;
+}
+
+#welcome-page {
+
 }
