@@ -21,12 +21,14 @@
           <button id="custom-pizza-button" class="btn" type="button">Order a Custom Pizza</button>
         </div>
       </div>
+
       <div class="well" id="custom-size-page">
         <h3>What size would you like?</h3>
         <button id="small-custom-button" class="btn" type="button">Small (10")</button>
         <button id="medium-custom-button" class="btn" type="button">Medium (12")</button>
         <button id="large-custom-button" class="btn" type="button">Large (14")</button>
       </div>
+
       <div class="well" id="custom-choose-topping-page">
         <div class="row">
           <form id="topping-form">
@@ -58,21 +60,49 @@
             <button class="btn" id="choose-toppings-custom-button" type="button">Select Toppings!</button>
           </form>
         </div>
-
       </div>
 
       <div class="well" id="custom-order-review-page">
         <h3>Your Order:</h3>
         <p>You have ordered a <span></span> pizza with the following toppings:<span></span>. Your total is $<span></span>!</p>
         <div class="center-buttons">
-          <button id="enter-address-button" class="btn" type="button">Click Here to Enter Address Information</button>
+          <button id="enter-delivery-information-button" class="btn" type="button">Click Here to Enter Delivery Information</button>
         </div>
       </div>
 
+      <div class="well" id="customer-contact-page">
+        <h3>Enter Your Information Below:</h3>
+        <form id="customer-contact">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="phone-number" placeholder="Phone Number">
+          </div>
 
+          <div id="address">
+            <div class="address">
+              <div class="form-group">
+                <input class="form-control" type="text" name="street" placeholder="Street">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="city" placeholder="City">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="State" placeholder="State">
+              </div>
+            </div>
+          </div>
+          <div class="center-buttons">
+            <button class="btn" type="button" name="button">Submit Your Contact Information</button>
+          </div>
 
+        </form>
+      </div>
 
-
+      <div class="well" id="final-confirmation-page">
+        <h3>We have recieved your order of a <span></span> pizza with the toppings <span></span> and are working on it now! It should be delivered to you within the hour, pleas have cash ready. Thanks for ordering from Brendan's!!</h3>
+      </div>
 
 
 

@@ -13,12 +13,20 @@
 }
 
 #custom-size-page {
-    text-align: center;
-    display: none;
+  text-align: center;
+  display: none;
+}
+
+#customer-contact-page {
+  display: none;
 }
 
 #enter-address-button {
   text-align: center;
+}
+
+#final-confirmation-page {
+  display: none;
 }
 
 .header {
