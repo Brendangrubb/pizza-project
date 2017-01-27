@@ -1,17 +1,24 @@
 
 
 #custom-choose-topping-page {
-
   display: none;
+}
+
+#custom-order-review-page {
+  display: none
 }
 
 #custom-pizza-button {
 
 }
 
-#custom-size-page{
+#custom-size-page {
     text-align: center;
     display: none;
+}
+
+#enter-address-button {
+  text-align: center;
 }
 
 .header {
@@ -24,7 +31,7 @@
 
 }
 
-.premade-or-custom-buttons {
+.center-buttons {
   text-align: center;
 }
 

@@ -34,7 +34,10 @@ $(document).ready(function() {
     $("#custom-choose-topping-page").fadeIn(1500);
   });
 // BUTTON to select toppings
-
+$("#choose-toppings-custom-button").click(function() {
+  $("#custom-choose-topping-page").hide();
+  $("#custom-order-review-page").fadeIn(1500);
+});
 
 
 });
