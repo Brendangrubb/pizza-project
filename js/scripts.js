@@ -1,13 +1,10 @@
 // Business Logic
-var works = console.log("This Part Works!");
-var worksToo = console.log("This Part Works, Too!!");
 
 // CONSTRUCTORS
-function Order(size, toppings, cost, customer) {
-  this.size = size;
+function Order(size) {
+  this.size = "";
   this.toppings = [];
-  this.cost = cost;
-  this.customer = customer;
+  this.cost = [];
 };
 
 function Topping(name, type, upcharge) {
@@ -16,9 +13,9 @@ function Topping(name, type, upcharge) {
   this.upcharge = upcharge;
 };
 
-function Customer(name, number) {
+function Customer(name, phone) {
   this.name = name;
-  this.number = number;
+  this.phone = phone;
   this.address = [];
 };
 
@@ -40,6 +37,9 @@ function Address(street, city, state) {
 $(document).ready(function() {
   // event.preventDefault();
 
+var newOrder;
+var newCustomer;
+
 // BUTTONS
 // button to choose custom or premade and enter choose size
   $("#custom-pizza-button").click(function() {
@@ -47,22 +47,39 @@ $(document).ready(function() {
     $("#custom-size-page").fadeIn(1000);
   });
 // buttonS to choose size and enter select toppings
-  var size = $();
-
   $("#small-custom-button").click(function() {
+    var newOrder = new Order();
+    newOrder.size = ("small");
+    $("#order-review-size").text(newOrder.size);
+    $("#final-confirmation-size").text(newOrder.size);
     $("#custom-size-page").hide();
     $("#custom-choose-topping-page").fadeIn(1500);
+    console.log(newOrder);
+
   });
   $("#medium-custom-button").click(function() {
+    var newOrder = new Order();
+    newOrder.size = ("medium");
+    $("#order-review-size").text(newOrder.size);
+    $("#final-confirmation-size").text(newOrder.size);
     $("#custom-size-page").hide();
     $("#custom-choose-topping-page").fadeIn(1500);
+    console.log(newOrder);
+
   });
   $("#large-custom-button").click(function() {
+    var newOrder = new Order();
+    newOrder.size = ("large");
+    $("#order-review-size").text(newOrder.size);
+    $("#final-confirmation-size").text(newOrder.size);
     $("#custom-size-page").hide();
     $("#custom-choose-topping-page").fadeIn(1500);
+    console.log(newOrder);
+
   });
 // button to select toppings and enter review order
   $("#choose-toppings-custom-button").click(function() {
+
     $("#custom-choose-topping-page").hide();
     $("#custom-order-review-page").fadeIn(1500);
   });
@@ -81,17 +98,16 @@ $(document).ready(function() {
     var stateInput = $("#state-input").val();
     var newCustomer = new Customer(nameInput, phoneInput);
     var newAddress = new Address(streetInput, cityInput, stateInput);
-    console.log(newAddress);
     newCustomer.address.push(newAddress);
-    console.log(newCustomer);
-
     $("#final-confirmation-name").text(newCustomer.name);
     $("#final-confirmation-address").text(newAddress.street);
     $("#final-confirmation-city").text(newAddress.city);
     $("#final-confirmation-state").text(newAddress.state);
+    $("#final-confirmation-phone").text(newCustomer.phone);
     $("#customer-contact-page").hide();
     $("#final-confirmation-page").fadeIn(1500);
   });
+
 // button back to main page
   $("#back-to-welcome-page").click(function() {
     $("#final-confirmation-page").hide();
