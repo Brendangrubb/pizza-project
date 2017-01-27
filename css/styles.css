@@ -1,6 +1,9 @@
 
 
+#custom-choose-topping-page {
 
+  display: none;
+}
 
 #custom-pizza-button {
 
@@ -22,6 +25,10 @@
 }
 
 .premade-or-custom-buttons {
+  text-align: center;
+}
+
+#topping-form {
   text-align: center;
 }
 
