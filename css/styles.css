@@ -1,12 +1,14 @@
 body {
-  background-color: #D49B17;
+  background-color: #dba24a;
+  font-family: 'Roboto Slab', serif;
+
 }
 
 span {
-  background-color: yellow;
+  font-weight: bolder;
 }
 .btn {
-  background-color: #AFD417;
+  background-color: #dba24a;
 }
 
 #custom-choose-topping-page {
@@ -37,7 +39,7 @@ span {
 
 .header {
   text-align: center;
-  background-color: #17AFD4;
+  background-color: #e12301;
   padding-top: 20px;
 }
 
@@ -50,5 +52,8 @@ span {
 }
 
 .well {
-  background-color: #17D49B;
+  background-color: #fffa8a;
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
