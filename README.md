@@ -9,31 +9,16 @@ Pizza Project is an application created to demonstrate my understanding of objec
 
 * The program will allow User to choose a topping for their pizza
   * (input ex) kale
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
-*
-  * (input ex)
-  * (output ex)
+  * (output ex) you have selected the following topping: kale
+* This program will allow User to pick a size for their pizza
+  * (input ex) medium
+  * (output ex) You have ordered a medium pizza
+* This program will allow User to enter their name, an address and phone number for delivery
+  * (input ex) Brendan Grubb, 9548169874, 216 NE 106th Ave, Portland, Oregon
+  * (output ex) Brendan Grubb, we have received your order[...]If there's a problem with your order we will call you at 9548169874. It should be delivered to 216 NE 106th Ave in Portland, Oregon within the hour.
+* This program will allow User to see the total amount they will be charged for their order
+  * (input ex) orders small pizza ($12) with Black Olives, BBQ Tempeh and Oat Cheese
+  * (output ex) Your total is $15!
 
 
 
