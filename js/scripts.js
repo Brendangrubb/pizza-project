@@ -27,21 +27,12 @@ Order.prototype.costCalculator = function() {
   for (i = 0; i < this.toppings.length; i +=1) {
     this.cost += 1;
   }
-
 };
 
 
-// this.toppings.forEach(function() {
-//   this.cost += 1;
-//   console.log(this.cost);
-// })
 
 // UI Logic
 $(document).ready(function() {
-  // event.preventDefault();
-
-
-
 
 // BUTTONS
 // button to choose custom or premade and enter choose size
@@ -50,7 +41,7 @@ $(document).ready(function() {
     $("#custom-size-page").fadeIn(1000);
   });
 
-// buttonS to choose size and enter select toppings
+// buttons to choose size and enter select toppings
   $("#small-custom-button").click(function() {
     newOrder.size = ("small");
     $("#order-review-size").text(newOrder.size);
@@ -67,7 +58,6 @@ $(document).ready(function() {
     newOrder.cost = 15;
     $("#custom-size-page").hide();
     $("#custom-choose-topping-page").fadeIn(1500);
-
   });
 
   $("#large-custom-button").click(function() {
