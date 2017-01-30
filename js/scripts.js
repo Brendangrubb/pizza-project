@@ -30,6 +30,14 @@ Order.prototype.costCalculator = function() {
 };
 
 
+// Clear customer contact fields
+var clearFields = function() {
+  $("input#name-input").val("");
+  $("input#phone-input").val("");
+  $("input#street-input").val("");
+  $("input#city-input").val("");
+  $("input#state-input").val("");
+};
 
 // UI Logic
 $(document).ready(function() {
@@ -108,6 +116,7 @@ $(document).ready(function() {
     $("#final-confirmation-phone").text(newCustomer.phone);
     $("#customer-contact-page").hide();
     $("#final-confirmation-page").fadeIn(1500);
+    clearFields();
   });
 
 // button back to main page
