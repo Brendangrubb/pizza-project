@@ -1,15 +1,21 @@
 body {
   background-color: #dba24a;
   font-family: 'Roboto Slab', serif;
-
 }
 
+h4 {
+  text-align: center;
+}
 span {
   font-weight: bolder;
-  
+  color: #4F4F4F;
 }
+
 .btn {
   background-color: #dba24a;
+  margin-top: 30px;
+  min-height: 80px;
+  min-width: 200px;
 }
 
 #custom-choose-topping-page {
@@ -55,6 +61,6 @@ span {
 .well {
   background-color: #fffa8a;
   margin-top: 60px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
